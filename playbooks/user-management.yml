@@ -1,0 +1,10 @@
+- name: user management
+  hosts: webserver
+  become: yes
+
+  tasks:
+    - name: create devops user
+      user:
+        name: devopsuser
+        state: present
+

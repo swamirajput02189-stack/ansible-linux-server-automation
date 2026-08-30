@@ -1,0 +1,7 @@
+- name: my first playbook
+  hosts: webserver
+  gather_facts: yes
+
+  tasks:
+   - name: check hostname
+     command: hostname

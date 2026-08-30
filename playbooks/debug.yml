@@ -1,0 +1,8 @@
+- name: debug demo
+  hosts: webserver
+  gather_facts: no
+
+  tasks:
+    - name: print msg
+      debug:
+         msg: "hello from ansible"

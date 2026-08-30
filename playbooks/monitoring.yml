@@ -1,0 +1,16 @@
+- name: monitoring & health report
+  hosts: webserver
+  gather_facts: no
+
+  tasks:
+    - name: check hostname
+      command: hostname
+
+    - name: check memory
+      command: free -h
+
+    - name: check disk
+      command: df -h
+
+    - name: check uptime
+      command: uptime
